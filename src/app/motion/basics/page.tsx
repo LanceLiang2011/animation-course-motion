@@ -2,6 +2,7 @@ import React from "react";
 import ShowHide from "./ShowHide";
 import DragGesture from "./DragGesture";
 import { Code } from "bright";
+import InView from "./InView";
 const dragCode = `
 export default function DragGesture() {
   const constraintRef = useRef(null);
@@ -76,6 +77,7 @@ export default function Page() {
       </div>
       <Code lang="js">{toggleCode}</Code>
       <Code lang="js">{dragCode}</Code>
+      <InView />
     </div>
   );
 }
