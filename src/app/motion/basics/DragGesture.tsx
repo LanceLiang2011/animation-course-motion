@@ -21,8 +21,8 @@ export default function DragGesture() {
         dragConstraints={constraintRef}
         className=" w-72 h-72"
         src={anyaShocked}
-        width={720}
-        height={700}
+        width={1500}
+        height={1500}
         alt="Anya Crying"
       />
     </div>
