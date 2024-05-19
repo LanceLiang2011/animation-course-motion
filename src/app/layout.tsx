@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import MainMenu from "./main-menu";
+import ClientOnly from "@/components/client-only";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -16,7 +18,16 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <div className="max-w-[1440px] mx-auto mt-8">
+          <MainMenu />
+          <main className="mt-9">{children}</main>
+        </div>
+        <footer className=" text-slate-700 flex justify-center items-center my-12">
+          Lance Liang &copy; {new Date().getFullYear().toString()} | All rights
+          reserved
+        </footer>
+      </body>
     </html>
   );
 }
