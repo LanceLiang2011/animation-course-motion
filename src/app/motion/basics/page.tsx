@@ -1,5 +1,6 @@
 import React from "react";
 import ShowHide from "./ShowHide";
+import DragGesture from "./DragGesture";
 
 export default function Page() {
   return (
@@ -10,6 +11,7 @@ export default function Page() {
       </p>
       <div className="flex">
         <ShowHide />
+        <DragGesture />
       </div>
     </div>
   );
