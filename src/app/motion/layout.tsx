@@ -10,7 +10,7 @@ export default function Layout({
 }>) {
   const paths = getPathFromFolder("motion");
   return (
-    <div className="grid grid-cols-4">
+    <div className="grid grid-cols-1 md:grid-cols-4">
       <ScrollArea className="h-72 w-48 rounded-md borde pt-8 col-span-1">
         <div className="p-4">
           <h4 className="mb-4 text-center text-sm font-medium leading-none">
@@ -18,7 +18,10 @@ export default function Layout({
           </h4>
           <Separator className="my-2" />
           {paths.map((path) => (
-            <Routetag key={path.path} route={path} />
+            <>
+              <Routetag key={path.path} route={path} />
+              <Separator className="my-2" />
+            </>
           ))}
         </div>
       </ScrollArea>
