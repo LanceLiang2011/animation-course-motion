@@ -14,7 +14,7 @@ export default function Layout({
       <ScrollArea className="h-72 w-48 rounded-md borde pt-8 col-span-1">
         <div className="p-4">
           <h4 className="mb-4 text-center text-sm font-medium leading-none">
-            Animations
+            Framer Motion
           </h4>
           <Separator className="my-2" />
           {paths.map((path) => (
