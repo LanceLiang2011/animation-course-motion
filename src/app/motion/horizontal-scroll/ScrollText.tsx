@@ -9,7 +9,7 @@ interface Props {
 export default function ScrollText({ children }: Props) {
   return (
     <motion.p
-      className="text-center text-3xl font-bold text-orange-600 font-mono my-8"
+      className="text-center text-3xl font-bold text-orange-600 font-mono"
       initial={{
         opacity: 0.5,
         scale: 0.9,
