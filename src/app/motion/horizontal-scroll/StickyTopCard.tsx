@@ -19,7 +19,8 @@ export default function StickyTopCard() {
         </div>
         <div className="font-normal text-slate-200">
           As we scroll down, the motion div will update the transformX of the
-          carousel, creating the desired visual effect.
+          sliding window inside the carousel, creating the desired visual
+          effect.
         </div>
       </div>
     </PinContainer>
